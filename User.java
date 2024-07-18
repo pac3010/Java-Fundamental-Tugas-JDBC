@@ -27,4 +27,19 @@ public class User extends Employee{
         }
         return false;
     }
+
+    @Override
+    public void displayAllDataInformation() {
+        int num = 1;
+        System.out.format("%-3s | %-25s | %-30s |\n", "No", "Username", "Password");
+        for (int i = 0; i < dataStatic.username.length; i++) {
+            System.out.format("%-3d | %-25s | %-30s |\n", num, dataStatic.username[i], dataStatic.password[i]);
+            num++;
+        }
+    }
+
+    @Override
+    public void displayDataInformation(){
+        System.out.println("Employee Information:\nUsername: "+uname+"\nPassword: "+pass);
+    }
 }
