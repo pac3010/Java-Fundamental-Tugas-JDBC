@@ -29,7 +29,7 @@ public class User extends Employee{
     }
 
     @Override
-    public void displayAllDataInformation() {
+    public void displayDataInformation() {
         int num = 1;
         System.out.format("%-3s | %-25s | %-30s |\n", "No", "Username", "Password");
         for (int i = 0; i < dataStatic.username.length; i++) {
@@ -39,7 +39,17 @@ public class User extends Employee{
     }
 
     @Override
-    public void displayDataInformation(){
-        System.out.println("Employee Information:\nUsername: "+uname+"\nPassword: "+pass);
+    public void displayDataInformation(int id){
+        int num = 1;
+        System.out.format("%-3s | %-25s | %-30s |\n", "No", "Username", "Password");
+        for (int i = 0; i < dataStatic.username.length; i++) {
+            if(i == id){
+                System.out.format("%-3d | %-25s | %-30s |\n", num, dataStatic.username[i], dataStatic.password[i]);
+            }
+            // else{
+            //     System.out.println("Invalid User Id!");
+            // }
+        } 
+            
     }
 }

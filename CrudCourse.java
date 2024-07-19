@@ -3,12 +3,12 @@ public class CrudCourse {
 
     Employee employee = new Employee("Putri Anggia Cahyani", "p.anggiacahyani@gmail.com");
     employee.displayDataInformation();
-    employee.displayAllDataInformation();
+    employee.displayDataInformation(4);
 
 
     User user = new User("Putri Anggia Cahyani", "putri.anggia@gmail.com", "putri.anggia","qwEr1234JJ");
     user.displayLoginStatus();
-    user.displayDataInformation();
+    user.displayDataInformation(2);
 
     }
 }
