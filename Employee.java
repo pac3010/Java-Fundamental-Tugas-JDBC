@@ -10,6 +10,14 @@ public class Employee implements EmployeeInterface {
         this.email = email;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
     @Override
     public void displayDataInformation(){ 
         int num = 1;

@@ -11,6 +11,16 @@ public class User extends Employee{
         this.pass = pass;
     }
 
+    public String getUname() {
+        return uname;
+    }
+
+    public String getPass() {
+        return pass;
+    }
+
+
+
     public void displayLoginStatus() {
         if (checkCredentials(uname, pass) == true){
             System.out.println("Login Successful\nWelcome, "+uname+"!");
