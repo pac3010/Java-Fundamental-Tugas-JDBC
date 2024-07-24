@@ -1,4 +1,4 @@
-package daos;
+package daos.implementation;
 
 import models.User;
 import java.sql.Connection;
@@ -6,6 +6,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.*;
+
+import daos.EmployeeDAOInterface;
 
 public class UserDAO implements EmployeeDAOInterface<User>{
     private Connection con;

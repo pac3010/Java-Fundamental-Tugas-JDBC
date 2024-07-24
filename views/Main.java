@@ -1,7 +1,7 @@
 package views;
 import daos.implementation.EmployeeDAO;
+import daos.implementation.UserDAO;
 import daos.EmployeeDAOInterface;
-import daos.UserDAO;
 import models.Employee;
 import models.User;
 import tools.DBConnection;
